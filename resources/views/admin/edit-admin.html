@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ms Petroleum">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Ms Petroleum">
+<meta name="google-site-verification" content="-3fR2s0fAH-tDmr1Fkt1Zn9Zv3qA3tcabWHX8mpCd28" />
+<link rel="shortcut icon" href="images/favicon.png"/>
+<title>Ms Petroleum</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- bootstrap-progressbar -->
+<link href="css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+<!-- iCheck -->
+<link href="css/green.css" rel="stylesheet">
+<!-- Custom Theme Style -->
+<link href="css/custom.min.css" rel="stylesheet">
+<!--Custom Styling-->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+<div class="container body">
+  <div class="main_container">
+    <div class="col-md-3 left_col">
+      <div class="left_col scroll-view">
+        <div class="navbar nav_title" style="border: 0;"> <a href="#" class="site_title"><i><img src="images/ms logo.png" alt="logo"></i> </a> </div>
+        <div class="clearfix"></div>
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <div class="menu_section">
+            <ul class="nav side-menu">
+              <li><a href="index.html"><i class="fa fa-th-list"></i>Dashboard</a> </li>
+              <li><a><i class="fa fa-th-list"></i>Master Modules<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="view-admin-table.html"><i class="fa fa-list-alt"></i>Admin Management</a></li>
+                  <li><a href="view-sub-item-table.html"><i class="fa fa-list-alt"></i>Item Management</a></li>
+                  <li><a href="view-customer-table.html"><i class="fa fa-list-alt"></i>Customer Management</a></li>
+                  <li><a href="pumps.html"><i class="fa fa-list-alt"></i>Pump Management</a></li>
+                  <li><a href="view-supplier-table.html"><i class="fa fa-list-alt"></i>Supplier Management</a></li>
+                  <li><a href="view-account-table.html"><i class="fa fa-list-alt"></i>Charts of Account</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-th-list"></i>Transactions<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+              <li><a href="view-inventory-table.html"><i class="fa fa-th-list"></i>Inventory Management</a> </li>
+              <li><a><i class="fa fa-th-list"></i>Zakat Module<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-th-list"></i>Kachi Parchi Module<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-th-list"></i>Other Income<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-th-list"></i>Tanker<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-th-list"></i>Shortage Excess<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-th-list"></i>Purchase Module<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+              <li><a><i class="fa fa-th-list"></i>Reports<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li><a href="#"><i class="fa fa-list-alt"></i>Create</a></li>
+                  <li><a href="#"><i class="fa fa-list-alt"></i>View</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /sidebar menu --> 
+      </div>
+    </div>
+    
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <nav>
+          <div class="nav toggle"> <a id="menu_toggle"><i class="fa fa-bars"></i></a> </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class=""> <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="images/favicon.png" alt="">Abdul Rehman <span class=" fa fa-angle-down"></span> </a>
+              <ul class="dropdown-menu dropdown-usermenu pull-right">
+                <li><a href="javascript:;"> Profile</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation --> 
+    
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="viewadminhead">
+            <h2>Edit Admin</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="createadmininputs">
+            <div class="form-group">
+              <label for="usr">First Name</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="createadmininputs">
+            <div class="form-group">
+              <label for="usr">Last Name</label>
+              <input type="text" class="form-control" id="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="createadmininputs">
+            <div class="form-group">
+              <label for="usr">Email</label>
+              <input type="text" class="form-control" id="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="createadmininputs">
+            <div class="form-group">
+              <label for="pwd">Password</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="createadmininputs">
+            <div class="form-group">
+              <label for="pwd">Confirm Password</label>
+              <input type="password" class="form-control" id="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="permissionhead">
+            <p>Permission</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-lg-offset-4">
+          <div class="selectallhead">
+            <ul>
+              <li>
+                <input type="checkbox" id="select_all"/>
+                Select All</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="friendslist">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="myCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Machine Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="myButton" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="myButton2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="adminCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Admin Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="admincheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="admincheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="expenseCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Expense Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="expensecheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="expensecheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="customerCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Customer Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="customercheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="customercheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="salesCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Sales Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="salescheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="salescheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="supplierCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Supplier Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="suppliercheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="suppliercheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="purchaseCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Purchase Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="purchasecheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="purchasecheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="categoryCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Category Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="categorycheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="categorycheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="reportCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Report</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="reportcheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="reportcheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="itemCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Item Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="itemcheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="itemcheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="kachiCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Kachi Parchi</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="kachicheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="kachicheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="pumpCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Pump Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="pumpcheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="pumpcheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="chkboxdesign">
+              <div class="checkboxes">
+                <label for="">
+                  <input id="accountCheckbox" class="checkbox" type="checkbox" name="check[]"/>
+                  Accounts Management</label>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="accountcheckbox1" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Edit</label>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="subcheckboxes">
+                    <label for="">
+                      <input id="accountcheckbox2" disabled class="checkbox" type="checkbox" name="check[]"/>
+                      Delete</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"> </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"> </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"> </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-lg-offset-8">
+          <div class="viewadminbtn">
+            <button href="#" class="btnedit">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /page content --> 
+    
+    <!-- footer content -->
+    <footer>
+      <div class="footersets">
+        <p>Copyright © 2017-2018 Green Grapez. All rights reserved. </p>
+        <br>
+        <span>Powered By<a href="http://greengrapez.com/"> <img src="images/icon.png" style="width:50px;" alt="po"></a></span> </div>
+      <div class="clearfix"></div>
+    </footer>
+    <!-- /footer content --> 
+  </div>
+</div>
+
+<!-- jQuery --> 
+<script src="js/jquery.min.js"></script> 
+<!-- Bootstrap --> 
+<script src="js/bootstrap.min.js"></script> 
+<!-- DateJS --> 
+<script src="js/build/date.js"></script> 
+<!-- bootstrap-progressbar --> 
+<script src="js/bootstrap-progressbar.min.js"></script> 
+<!-- iCheck --> 
+<script src="js/icheck.min.js"></script> 
+<!-- bootstrap-daterangepicker --> 
+<script src="js/moment.min.js"></script> 
+<script src="js/daterangepicker.js"></script> 
+<!-- Custom Theme Scripts --> 
+<script src="js/custom.min.js"></script>
+</body>
+</html>
